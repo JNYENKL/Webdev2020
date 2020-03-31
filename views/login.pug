@@ -1,0 +1,12 @@
+include header.pug
+div(class="col-3 offset-md-4 text-center formDiv")
+  div(class="col")
+    h3 Logga in
+    img(src="images/LoginIcon.png" class="img-fluid")
+    form(action='/login', method='POST')
+      input(class="form-control-sm" type="text", name="username", placeholder="Användarnamn", required)
+      br
+      input(class="form-control-sm" type="password", name="password", placeholder="Lösenord", required)
+      br
+      input(class="btnInpt btn btn-outline-info" type='submit', value='Login')
+include footer.pug

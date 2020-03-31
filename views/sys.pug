@@ -1,0 +1,15 @@
+include header.pug
+          
+if posts.length > 0
+    for e in posts
+      div(class="container bg-light rounded contentDiv")
+        h1(class="title")= e["title"]
+        p(class="text")= e["text"]
+        hr
+        p(class="timestamp")= e["date"]
+        a(class="edit" href="#") Redigera
+else
+  div(class="container")
+    h1 Looks Empty Here!
+    
+include footer.pug

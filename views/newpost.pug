@@ -1,0 +1,12 @@
+include header.pug
+div(class="container formDiv")
+  form(class="inputForm" action="/newPost", method="POST" onsubmit="" id="inputForm")
+    input(class="form-control titleField" type="text", name="title", value="" placeholder="Titel")
+    textarea(class="form-control textField" type="text" form="inputForm" value="" name="txt", rows="10", cols="10")
+    select(class="custom-select category" type="text" form="inputForm", name="cat" value="")
+      option(value="Framsidan") Framsidan
+      option(value="Databaser") Databaser
+      option(value="Inlägg") Inlägg
+      option(value="Systemet") Systemet
+    input(class="btnInpt btn btn-outline-info" type="submit", value="Submit" form="inputForm")
+include footer.pug

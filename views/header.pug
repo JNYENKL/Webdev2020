@@ -1,0 +1,38 @@
+doctype html
+html
+    head
+        title="Matsalen"
+        meta(charset="utf-8")
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js")
+        style
+          include css/bootstrap-grid.css
+          include css/bootstrap.css
+
+    body 
+              img(src="images/layerImg.png" class="layer")
+              nav(class ="navbar navbar-expand-lg navbar-light")
+                ul(class="navbar-nav")
+                  li(class="nav-item")
+                    a(href='/' method="GET" class="navbar-brand")
+                      img(src="images/logoBanner.png" class="img-fluid logoImg")
+                      p(class="centerTextLogo") Matsalen
+                  li(class="nav-item firstLink")
+                    a(href='/dbinfo' method="GET" class="nav-link linkButton") Databasen
+                  li(class="nav-item")
+                    a(href='/insertinfo' method="GET" class="nav-link linkButton") Lägga till elever
+                  li(class="nav-item")
+                    a(href='/sysinfo' method="GET" class="nav-link linkButton") Systemet
+                  li(class="nav-item")
+                    a(href='/newpost' method="GET" class="nav-link linkButton")
+                      img(src="images/newIcon.png" class="loginIcon" height="30px")
+                      |   Ny Post
+                  li(class="nav-item loginLink")
+                    a(href='/stats' method="GET" class="nav-link linkButton")
+                      img(src="images/statIcon.png" class="loginIcon" height="30px")
+                      |   Statistik
+                  li(class="nav-item loginLink")
+                    a(href='/login' method="GET" class="nav-link linkButton")
+                      img(src="images/LoginIcon.png" class="loginIcon" height="30px")
+                      |   Login
+                img(src="images/ntiLogo.png" class="ntiLogo")
+                
